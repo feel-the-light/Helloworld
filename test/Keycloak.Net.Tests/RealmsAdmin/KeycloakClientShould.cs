@@ -7,7 +7,7 @@ namespace Keycloak.Net.Tests
     public partial class KeycloakClientShould
     {
 	    [Theory]
-        [InlineData("Insurance")]
+        [InlineData("master")]
 	    public async Task GetRealmsAsync(string realm)
 	    {
 		    var result = await _client.GetRealmsAsync(realm);
@@ -15,7 +15,7 @@ namespace Keycloak.Net.Tests
 	    }
 
         [Theory]
-        [InlineData("Insurance")]
+        [InlineData("master")]
         public async Task GetRealmAsync(string realm)
         {
             var result = await _client.GetRealmAsync(realm);
@@ -23,7 +23,7 @@ namespace Keycloak.Net.Tests
         }
 
         [Theory]
-        [InlineData("Insurance")]
+        [InlineData("master")]
         public async Task GetAdminEventsAsync(string realm)
         {
             var result = await _client.GetAdminEventsAsync(realm);
@@ -31,7 +31,7 @@ namespace Keycloak.Net.Tests
         }
 
         [Theory]
-        [InlineData("Insurance")]
+        [InlineData("master")]
         public async Task GetClientSessionStatsAsync(string realm)
         {
             var result = await _client.GetClientSessionStatsAsync(realm);
@@ -39,7 +39,7 @@ namespace Keycloak.Net.Tests
         }
 
         [Theory]
-        [InlineData("Insurance")]
+        [InlineData("master")]
         public async Task GetRealmDefaultClientScopesAsync(string realm)
         {
             var result = await _client.GetRealmDefaultClientScopesAsync(realm);
@@ -47,7 +47,7 @@ namespace Keycloak.Net.Tests
         }
 
         [Theory]
-        [InlineData("Insurance")]
+        [InlineData("master")]
         public async Task GetRealmGroupHierarchyAsync(string realm)
         {
             var result = await _client.GetRealmGroupHierarchyAsync(realm);
@@ -55,7 +55,7 @@ namespace Keycloak.Net.Tests
         }
 
         [Theory]
-        [InlineData("Insurance")]
+        [InlineData("master")]
         public async Task GetRealmOptionalClientScopesAsync(string realm)
         {
             var result = await _client.GetRealmOptionalClientScopesAsync(realm);
@@ -63,7 +63,7 @@ namespace Keycloak.Net.Tests
         }
 
         [Theory]
-        [InlineData("Insurance")]
+        [InlineData("master")]
         public async Task GetEventsAsync(string realm)
         {
             var result = await _client.GetEventsAsync(realm);
@@ -71,7 +71,7 @@ namespace Keycloak.Net.Tests
         }
 
         [Theory]
-        [InlineData("Insurance")]
+        [InlineData("master")]
         public async Task GetRealmEventsProviderConfigurationAsync(string realm)
         {
             var result = await _client.GetRealmEventsProviderConfigurationAsync(realm);
@@ -79,7 +79,7 @@ namespace Keycloak.Net.Tests
         }
 
         [Theory]
-        [InlineData("Insurance")]
+        [InlineData("master")]
         public async Task GetRealmGroupByPathAsync(string realm)
         {
             var groups = await _client.GetRealmGroupHierarchyAsync(realm);
@@ -92,7 +92,7 @@ namespace Keycloak.Net.Tests
         }
 
         [Theory]
-        [InlineData("Insurance")]
+        [InlineData("master")]
         public async Task GetRealmUsersManagementPermissionsAsync(string realm)
         {
             var result = await _client.GetRealmUsersManagementPermissionsAsync(realm);
